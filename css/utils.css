@@ -1,0 +1,101 @@
+/* Google Fonts:- */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Roboto&display=swap');
+
+/* Saving content in variables:- */
+:root {
+
+
+
+  /* dark pink */
+
+  /* --dark-color: #850E35; */
+  /* --primary-color: #EE6983; */
+  /* --secondary-color: #FFC4C4; */
+  /* --light-color: #FFF5E4; */
+
+  /* light set */
+
+  /* --dark-color: #937DC2; */
+  /* --primary-color: #C689C6; */
+  /* --secondary-color: #FFABE1; */
+  /* --light-color: #FFE6F7; */
+
+  /* main */
+
+  --dark-color: #06283D;
+  --primary-color: #242F9B;
+  --secondary-color: #646FD4;
+  --light-color: #DBDFFD;
+  --font1: 'Baloo Bhai 2', cursive;
+  --font2: 'Roboto', sans-serif;
+}
+
+/* Font Families */
+.font1 {
+  font-family: var(--font1);
+}
+
+.font2 {
+  font-family: var(--font2);
+}
+
+/* this will make width to 50% of screen size. */
+.max-width-half {
+  width: 50%;
+}
+
+.max-width-seventy {
+  width: 70%;
+}
+
+/* this will make width to 80% of screen size. */
+.max-width-eighty {
+  width: 80%;
+}
+
+/* this will make width to 75% of screen size. */
+.max-width-Mhalf {
+  width: 75%;
+}
+
+/* this will center content from all direction. */
+.m-auto {
+  margin: auto;
+}
+
+/* this class is for buttons */
+.btn {
+  padding: 0 12px;
+  border: 2px solid var(--dark-color);
+  /* 16 bd */
+  border-radius: 16px;
+  font-size: 16px;
+  font-family: var(--font1);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  color: white;
+  background-color: var(--primary-color);
+  ;
+}
+
+/* form-input */
+.form-input {
+  padding-left: 20px;
+  border: 2.5px solid var(--dark-color);
+  font-size: 16px;
+  /* 12 */
+  border-radius: 28px;
+  margin: 0 13px;
+  font-family: var(--font1);
+}
+
+.form-box input, textarea {
+  width: 44vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 6px;
+  margin: 7px;
+}

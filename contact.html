@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iBlog-Contact us</title>
+  <!-- Utils.css -->
+  <link rel="stylesheet" href="css/utils.css">
+  <!-- Styles.css -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- contact.css -->
+  <link rel="stylesheet" href="css/contact.css">
+  <!-- mobile.css -->
+  <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+  <!-- Navigation bar. -->
+
+  <nav class="navigation max-width-eighty m-auto font1">
+    <div class="nav-left">
+      <span>iBlog</span>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://dev-jariwala.github.io/Dev-jariwala/">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <form class="" action="search.html" method="get">
+        <input class="form-input" type="text" name="query" placeholder="Article Search">
+        <button class="btn">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Line -->
+
+  <div class="max-width-eighty m-auto hrline">
+    <hr>
+  </div>
+
+  <!-- Contact us -->
+
+  <div class="contact-content font1">
+    <div class="font2">
+      <h2 class="title">Feel Free to Contact us</h2>
+    </div>
+
+    <!-- content -->
+    <div class="content max-width-eighty m-auto">
+      <div class="contact-form ">
+        <form action="" method="post" name="google-sheet">
+          <div class="form-box">
+            <input class="form-input" name="name" type="text" placeholder="Enter Your Name">
+          </div>
+          <div class="form-box">
+            <input class="form-input" name="phone" type="number" placeholder="Enter Your Mobile Number">
+          </div>
+          <div class="form-box">
+            <input class="form-input" name="email" type="email" placeholder="Enter Your Email Id">
+          </div>
+          <div class="form-box">
+            <textarea class="form-input" name="message" rows="5" cols="80" placeholder="Contact us to approve your Article!"></textarea>
+          </div>
+          <div class="form-box">
+            <button class="btn form-submit-btn" type="submit" name="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer of website. -->
+  <div class="footer">
+    Copyright &copy; iBlog.com <a href="https://www.vecteezy.com/free-vector/typing">Vector credits: Vecteezy</a>
+  </div>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyZpJcUjkD1ZaJQ-h3NLS46MzB4CHr6XtgaDUVwqrmmLOjM1g6xEP0tH2cPcmN2PT07/exec'
+    const form = document.forms['google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => alert("Thank you! your form is submitted successfully." ))
+      .then(() => {  window.location.reload(); })
+      .catch(error => console.error('Error!', error.message))
+    })
+    </script>
+</body>
+
+</html>

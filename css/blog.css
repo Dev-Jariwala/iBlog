@@ -1,0 +1,18 @@
+
+.blogpost-content{
+  margin-top: 35px;
+  margin-bottom: 35px;
+  /* background-color: black; */
+  /* border: 5px solid var(--dark-color); */
+  /* border-radius: 50px; */
+  /* color: grey; */
+}
+
+.blogpost-content p{
+  /* padding: 0 25px; */
+  text-align: justify;
+}
+
+.blogpost-content h1{
+  text-align: left;
+}
